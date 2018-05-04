@@ -4,7 +4,6 @@
         type="checkbox"
         class="toggle"
         v-model="todo.completed"
-
       >
       <label>{{todo.content}}</label>
       <button class="delete" @click="deleteTodo">X</button>
@@ -16,7 +15,6 @@ export default {
       todo: {
           type: Object,
           required: true,
-
       }
   },
   methods: {
@@ -24,7 +22,6 @@ export default {
           this.$emit('del', this.todo.id)
       }
   }
-
 }
 </script>
 
