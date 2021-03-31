@@ -69,5 +69,6 @@ export default {
         .clear
             float right
             margin-right  10px
+            cursor pointer
             
 </style>

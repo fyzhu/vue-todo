@@ -42,6 +42,7 @@ export default {
             background-color #fff
             float left
             border 0
+            cursor pointer
             
         label 
             line-height 50px
