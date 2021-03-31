@@ -49,6 +49,7 @@ export default {
             height 50px
             display inline-block
             float left
+            font-size  25px
         button 
             width 40px
             height 40px
