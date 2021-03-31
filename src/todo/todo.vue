@@ -50,12 +50,17 @@ export default {
     },
     methods: {
       addTodo(e){
-          this.todos.unshift({
-              id: id ++,
-              content: e.target.value.trim(),
-              completed: false
-          })
-          e.target.value=''
+          const content = e.target.value.trim()
+          if (content.length){
+              this.todos.unshift({
+                  id: id ++,
+                  content,
+                  completed: false
+              })
+              e.target.value=''
+          } else {
+              alert('请输入内容')
+          }
       },
       deleteTodo(id){
           this.todos.splice(this.todos.findIndex(todo => todo.id ===id), 1)
