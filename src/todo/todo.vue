@@ -8,6 +8,7 @@
             placeholder="接下去要做什么？"
             @keyup.enter="addTodo"
         >
+        <div class="no-todo" v-if="!filteredTodos.length">暂无任务</div>
         <item 
             :todo="todo"
             v-for="todo in filteredTodos"
@@ -73,6 +74,10 @@ section
     text-align center
     width 600px
     margin 0 auto
+    .no-todo
+        background #fff
+        height 50px
+        line-height 50px
     input
         width 100%
         margin 0 auto
