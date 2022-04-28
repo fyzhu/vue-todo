@@ -1,7 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 const HTMLPlugin = require('html-webpack-plugin')
-const ExtractPlugin = require('extract-text-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -50,13 +51,14 @@ const config = {
                 NODE_ENV: isDev? '"development"': '"production"'
             }
         }),
-        new HTMLPlugin()
+        new HTMLPlugin(),
+        new VueLoaderPlugin()
     ]
 }
 
 if (isDev) {
     config.module.rules.push({
-        test: /.styl$/,
+        test: /\.styl(us)?$/,
         use: [
             'style-loader',
             'css-loader',
@@ -73,14 +75,15 @@ if (isDev) {
     config.devServer ={
         port: 8000,
         // host: '0.0.0.0',
-        overlay: {
-            errors: true,
+        client: {
+            overlay: {
+                errors: true,
+            },
         },
         hot: true,
         // open: true
     }
     config.plugins.push(
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin()
     )
 }else{//生产环境
@@ -91,22 +94,20 @@ if (isDev) {
     config.output.filename='[name].[chunkhash:8].js'
     config.module.rules.push({
         test: /.styl$/,
-        use: ExtractPlugin.extract({
-            fallback: 'style-loader',
-            use: [                
-                'css-loader',
-                {
-                    loader: 'postcss-loader',
-                    options: {
-                        sourceMap: true,
-                    }
-                },
-                'stylus-loader'
-            ]
-        })
+        use: [    
+            MiniCssExtractPlugin.loader,            
+            'css-loader',
+            {
+                loader: 'postcss-loader',
+                options: {
+                    sourceMap: true,
+                }
+            },
+            'stylus-loader'
+        ]
     })
     config.plugins.push(
-        new ExtractPlugin('styles.[contentHash:8].css'),
+        new MiniCssExtractPlugin('styles.[contentHash:8].css'),
         new webpack.optimize.CommonsChunkPlugin({
             name:'vendor'
         }),
