@@ -1,40 +1,24 @@
 {
-  "name": "935vue",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "935vue_todo",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js"
+    "serve": "vite",
+    "serve:dev": "vite --mode development",
+    "serve:prod": "vite --mode production",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "build:prod": "vite build --mode production"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^7.2.6",
-    "babel-core": "^6.26.3",
-    "babel-helper-vue-jsx-merge-props": "^2.0.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-vue-jsx": "^3.7.0",
-    "babel-preset-env": "^1.7.0",
-    "cross-env": "^5.2.1",
-    "css-loader": "^0.28.11",
-    "file-loader": "^1.1.11",
-    "html-webpack-plugin": "^4.5.2",
-    "mini-css-extract-plugin": "^1.6.2",
-    "postcss-loader": "^2.1.6",
-    "style-loader": "^0.19.1",
-    "stylus": "^0.54.8",
-    "stylus-loader": "^3.0.2",
-    "url-loader": "^0.6.2",
-    "vue": "^2.6.14",
-    "vue-loader": "^15.9.8",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0",
-    "webpack-dev-server": "^4.8.1"
+    "autoprefixer": "^10.4.7",
+    "stylus": "^0.57.0",
+    "vite": "^2.7.13",
+    "vue": "^2.6.14"
   },
   "devDependencies": {
-    "webpack-cli": "^4.9.2"
+    "@vitejs/plugin-legacy": "^1.6.4",
+    "vite-plugin-compression": "^0.4.0",
+    "vite-plugin-vue2": "^1.9.2",
+    "vue-template-compiler": "^2.6.14"
   }
 }
