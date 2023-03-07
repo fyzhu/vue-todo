@@ -5,7 +5,7 @@
 
 vue2.0 + webpack  
 
-updated to vue3.0 + vite 
+updated to vite 
 
 课程地址
 https://www.imooc.com/learn/935
