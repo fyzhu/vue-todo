@@ -3,7 +3,7 @@
 
 慕课网免费课程
 
-vue2.0 + webpack  
+vue2.0 + ~~webpack~~
 
 updated to vite 
 
