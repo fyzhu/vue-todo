@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.57.0
     version: 0.57.0
   vite:
-    specifier: ^2.9.13
-    version: 2.9.13(stylus@0.57.0)
+    specifier: ^2.9.16
+    version: 2.9.16(stylus@0.57.0)
   vue:
     specifier: ^2.6.14
     version: 2.6.14
@@ -21,13 +21,13 @@ dependencies:
 devDependencies:
   '@vitejs/plugin-legacy':
     specifier: ^1.6.4
-    version: 1.8.2(vite@2.9.13)
+    version: 1.8.2(vite@2.9.16)
   vite-plugin-compression:
     specifier: ^0.4.0
-    version: 0.4.0(vite@2.9.13)
+    version: 0.4.0(vite@2.9.16)
   vite-plugin-vue2:
     specifier: ^1.9.2
-    version: 1.9.3(vite@2.9.13)(vue-template-compiler@2.6.14)
+    version: 1.9.3(vite@2.9.16)(vue-template-compiler@2.6.14)
   vue-template-compiler:
     specifier: ^2.6.14
     version: 2.6.14
@@ -421,7 +421,7 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@vitejs/plugin-legacy@1.8.2(vite@2.9.13):
+  /@vitejs/plugin-legacy@1.8.2(vite@2.9.16):
     resolution: {integrity: sha512-NCOKU+pU+cxLMR9P9RTolEuOK+h+zYBXlknj+zGcKSj/NXBZYgA1GAH1FnO4zijoWRiTaiOm2ha9LQrELE7XHg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -432,7 +432,7 @@ packages:
       magic-string: 0.26.2
       regenerator-runtime: 0.13.9
       systemjs: 6.12.1
-      vite: 2.9.13(stylus@0.57.0)
+      vite: 2.9.16(stylus@0.57.0)
     dev: true
 
   /@vue/babel-helper-vue-jsx-merge-props@1.2.1:
@@ -1670,7 +1670,7 @@ packages:
     resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
     dev: true
 
-  /vite-plugin-compression@0.4.0(vite@2.9.13):
+  /vite-plugin-compression@0.4.0(vite@2.9.16):
     resolution: {integrity: sha512-CGC8DfIey0k4S4o54ylwFIzT1Mjb9s7cMmlXj6DMM1MZZIeWFjPCJc6YZWjnnS28ul3r7R1nmihvYvGg/lOYsQ==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -1678,12 +1678,12 @@ packages:
       chalk: 4.1.2
       debug: 4.3.4
       fs-extra: 10.1.0
-      vite: 2.9.13(stylus@0.57.0)
+      vite: 2.9.16(stylus@0.57.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-plugin-vue2@1.9.3(vite@2.9.13)(vue-template-compiler@2.6.14):
+  /vite-plugin-vue2@1.9.3(vite@2.9.16)(vue-template-compiler@2.6.14):
     resolution: {integrity: sha512-0KhHSEeht0VHJtt4Z2cJ9bWBq4dP3HoXpapqAHV+f+cUa6KywYdOd+z6sSGLpuGjN8F9YinrFIo8dfVmMOpc8Q==}
     peerDependencies:
       vite: ^2.0.0-beta.23
@@ -1708,7 +1708,7 @@ packages:
       rollup: 2.74.1
       slash: 3.0.0
       source-map: 0.7.3
-      vite: 2.9.13(stylus@0.57.0)
+      vite: 2.9.16(stylus@0.57.0)
       vue-template-compiler: 2.6.14
       vue-template-es2015-compiler: 1.9.1
     transitivePeerDependencies:
@@ -1768,8 +1768,8 @@ packages:
       - whiskers
     dev: true
 
-  /vite@2.9.13(stylus@0.57.0):
-    resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
+  /vite@2.9.16(stylus@0.57.0):
+    resolution: {integrity: sha512-X+6q8KPyeuBvTQV8AVSnKDvXoBMnTx8zxh54sOwmmuOdxkjMmEJXH2UEchA+vTMps1xw9vL64uwJOWryULg7nA==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
