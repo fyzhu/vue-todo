@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.57.0
     version: 0.57.0
   vite:
-    specifier: ^3.2.7
-    version: 3.2.7(stylus@0.57.0)(terser@5.25.0)
+    specifier: ^3.2.8
+    version: 3.2.8(stylus@0.57.0)(terser@5.25.0)
   vue:
     specifier: ^2.7.15
     version: 2.7.15
@@ -21,13 +21,13 @@ dependencies:
 devDependencies:
   '@vitejs/plugin-legacy':
     specifier: ^2.3.1
-    version: 2.3.1(terser@5.25.0)(vite@3.2.7)
+    version: 2.3.1(terser@5.25.0)(vite@3.2.8)
   '@vitejs/plugin-vue2':
     specifier: ^2.3.1
-    version: 2.3.1(vite@3.2.7)(vue@2.7.15)
+    version: 2.3.1(vite@3.2.8)(vue@2.7.15)
   vite-plugin-compression:
     specifier: ^0.4.0
-    version: 0.4.0(vite@3.2.7)
+    version: 0.4.0(vite@3.2.8)
   vue-template-compiler:
     specifier: ^2.6.14
     version: 2.6.14
@@ -109,7 +109,7 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@vitejs/plugin-legacy@2.3.1(terser@5.25.0)(vite@3.2.7):
+  /@vitejs/plugin-legacy@2.3.1(terser@5.25.0)(vite@3.2.8):
     resolution: {integrity: sha512-J5KaGBlSt2tEYPVjM/C8dA6DkRzkFkbPe+Xb4IX5G+XOV5OGbVAfkMjKywdrkO3gGynO8S98i71Lmsff4cWkCQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -122,17 +122,17 @@ packages:
       regenerator-runtime: 0.13.11
       systemjs: 6.14.2
       terser: 5.25.0
-      vite: 3.2.7(stylus@0.57.0)(terser@5.25.0)
+      vite: 3.2.8(stylus@0.57.0)(terser@5.25.0)
     dev: true
 
-  /@vitejs/plugin-vue2@2.3.1(vite@3.2.7)(vue@2.7.15):
+  /@vitejs/plugin-vue2@2.3.1(vite@3.2.8)(vue@2.7.15):
     resolution: {integrity: sha512-/ksaaz2SRLN11JQhLdEUhDzOn909WEk99q9t9w+N12GjQCljzv7GyvAbD/p20aBUjHkvpGOoQ+FCOkG+mjDF4A==}
     engines: {node: ^14.18.0 || >= 16.0.0}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
       vue: ^2.7.0-0
     dependencies:
-      vite: 3.2.7(stylus@0.57.0)(terser@5.25.0)
+      vite: 3.2.8(stylus@0.57.0)(terser@5.25.0)
       vue: 2.7.15
     dev: true
 
@@ -701,7 +701,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /vite-plugin-compression@0.4.0(vite@3.2.7):
+  /vite-plugin-compression@0.4.0(vite@3.2.8):
     resolution: {integrity: sha512-CGC8DfIey0k4S4o54ylwFIzT1Mjb9s7cMmlXj6DMM1MZZIeWFjPCJc6YZWjnnS28ul3r7R1nmihvYvGg/lOYsQ==}
     peerDependencies:
       vite: '>=2.0.0'
@@ -709,13 +709,13 @@ packages:
       chalk: 4.1.2
       debug: 4.3.4
       fs-extra: 10.1.0
-      vite: 3.2.7(stylus@0.57.0)(terser@5.25.0)
+      vite: 3.2.8(stylus@0.57.0)(terser@5.25.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@3.2.7(stylus@0.57.0)(terser@5.25.0):
-    resolution: {integrity: sha512-29pdXjk49xAP0QBr0xXqu2s5jiQIXNvE/xwd0vUizYT2Hzqe4BksNNoWllFVXJf4eLZ+UlVQmXfB4lWrc+t18g==}
+  /vite@3.2.8(stylus@0.57.0)(terser@5.25.0):
+    resolution: {integrity: sha512-EtQU16PLIJpAZol2cTLttNP1mX6L0SyI0pgQB1VOoWeQnMSvtiwovV3D6NcjN8CZQWWyESD2v5NGnpz5RvgOZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
