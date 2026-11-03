@@ -13,23 +13,23 @@ importers:
         version: 10.4.7(postcss@8.5.16)
       stylus:
         specifier: ^0.57.0
-        version: 0.57.0
+        version: 0.57.0(supports-color@7.2.0)
       vite:
-        specifier: ^6.4.3
-        version: 6.4.3(stylus@0.57.0)(terser@5.25.0)
+        specifier: ^6.4.5
+        version: 6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0)
       vue:
         specifier: ^3.0.0
         version: 3.0.0
     devDependencies:
       '@vitejs/plugin-legacy':
         specifier: ^2.3.1
-        version: 2.3.1(terser@5.25.0)(vite@6.4.3(stylus@0.57.0)(terser@5.25.0))
+        version: 2.3.1(terser@5.25.0)(vite@6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0))
       '@vitejs/plugin-vue2':
         specifier: ^2.3.1
-        version: 2.3.1(vite@6.4.3(stylus@0.57.0)(terser@5.25.0))(vue@3.0.0)
+        version: 2.3.1(vite@6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0))(vue@3.0.0)
       vite-plugin-compression:
         specifier: ^0.4.0
-        version: 0.4.0(vite@6.4.3(stylus@0.57.0)(terser@5.25.0))
+        version: 0.4.0(supports-color@7.2.0)(vite@6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0))
       vue-template-compiler:
         specifier: ^2.6.14
         version: 2.6.14
@@ -661,8 +661,8 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@6.4.3:
-    resolution: {integrity: sha512-NTKlcQjlAK7MlQoyb6LgaqHc8sso/pVyUJYWMws3jg21uTJw/LddqIFPcPqP6PzpgbIcZyKI85sFE4HBrQDA8A==}
+  vite@6.4.5:
+    resolution: {integrity: sha512-4enwjFfi4IwtEh0w+jPzpLVOFQiPHmmzPxcHXQOyEur47o6u0jE573DmGpjA+7irXoMLYRZD5ZaFUEneS3abPg==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -901,7 +901,7 @@ snapshots:
 
   '@types/estree@1.0.9': {}
 
-  '@vitejs/plugin-legacy@2.3.1(terser@5.25.0)(vite@6.4.3(stylus@0.57.0)(terser@5.25.0))':
+  '@vitejs/plugin-legacy@2.3.1(terser@5.25.0)(vite@6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0))':
     dependencies:
       '@babel/standalone': 7.23.5
       core-js: 3.34.0
@@ -909,11 +909,11 @@ snapshots:
       regenerator-runtime: 0.13.11
       systemjs: 6.14.2
       terser: 5.25.0
-      vite: 6.4.3(stylus@0.57.0)(terser@5.25.0)
+      vite: 6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0)
 
-  '@vitejs/plugin-vue2@2.3.1(vite@6.4.3(stylus@0.57.0)(terser@5.25.0))(vue@3.0.0)':
+  '@vitejs/plugin-vue2@2.3.1(vite@6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0))(vue@3.0.0)':
     dependencies:
-      vite: 6.4.3(stylus@0.57.0)(terser@5.25.0)
+      vite: 6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0)
       vue: 3.0.0
 
   '@vue/compiler-core@3.0.0':
@@ -1012,9 +1012,11 @@ snapshots:
 
   de-indent@1.0.2: {}
 
-  debug@4.3.4:
+  debug@4.3.4(supports-color@7.2.0):
     dependencies:
       ms: 2.1.2
+    optionalDependencies:
+      supports-color: 7.2.0
 
   decode-uri-component@0.2.2: {}
 
@@ -1189,10 +1191,10 @@ snapshots:
 
   sourcemap-codec@1.4.8: {}
 
-  stylus@0.57.0:
+  stylus@0.57.0(supports-color@7.2.0):
     dependencies:
       css: 3.0.0
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@7.2.0)
       glob: 7.2.3
       safer-buffer: 2.1.2
       sax: 1.2.4
@@ -1220,16 +1222,16 @@ snapshots:
 
   universalify@2.0.0: {}
 
-  vite-plugin-compression@0.4.0(vite@6.4.3(stylus@0.57.0)(terser@5.25.0)):
+  vite-plugin-compression@0.4.0(supports-color@7.2.0)(vite@6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0)):
     dependencies:
       chalk: 4.1.2
-      debug: 4.3.4
+      debug: 4.3.4(supports-color@7.2.0)
       fs-extra: 10.1.0
-      vite: 6.4.3(stylus@0.57.0)(terser@5.25.0)
+      vite: 6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0)
     transitivePeerDependencies:
       - supports-color
 
-  vite@6.4.3(stylus@0.57.0)(terser@5.25.0):
+  vite@6.4.5(stylus@0.57.0(supports-color@7.2.0))(terser@5.25.0):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.4)
@@ -1239,7 +1241,7 @@ snapshots:
       tinyglobby: 0.2.17
     optionalDependencies:
       fsevents: 2.3.3
-      stylus: 0.57.0
+      stylus: 0.57.0(supports-color@7.2.0)
       terser: 5.25.0
 
   vue-template-compiler@2.6.14:
